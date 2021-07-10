@@ -60,6 +60,16 @@ public class ArrayProgram {
             return -1;
         }
     }
+    public int[] reverse(int arr[])
+    {
+        int ar[]=new int[arr.length];
+        int j=0;
+        for(int i=arr.length-1;i>=0;i--)
+        {
+            ar[j++]=arr[i];
+        }
+        return ar;
+    }
     public void display(int arr[])
     {
         System.out.println("Array Elements are:-");
@@ -111,5 +121,8 @@ public class ArrayProgram {
             System.out.println("This position is not present!");
         }
 
+        System.out.println("Reversed Array");
+        int ar[]=ob.reverse(arr);
+        ob.display(ar);
     }
 }
