@@ -30,6 +30,12 @@ public class TestList {
         int i=findPosition(ls,ele);
         ls.remove((i));
     }
+    public void display(List<Integer> ls)
+    {
+        for (Integer i:ls) {
+            System.out.print(i+" ");
+        }
+    }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
 
@@ -70,5 +76,7 @@ public class TestList {
         obj.delete(list,e);
         System.out.println("List after deleting element= "+list);
         System.out.println("Size of List= "+list.size());
+        obj.display(list);
+        System.out.println();
     }
 }
