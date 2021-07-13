@@ -2,6 +2,7 @@ package com.example.trainingalok.Practice;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -35,6 +36,16 @@ public class TestList {
         for (Integer i:ls) {
             System.out.print(i+" ");
         }
+        System.out.println();
+    }
+    public void show(List<Integer> ls)
+    {
+        Iterator it=ls.iterator();
+        while (it.hasNext())
+        {
+            System.out.print(it.next()+" ");
+        }
+        System.out.println();
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -77,6 +88,6 @@ public class TestList {
         System.out.println("List after deleting element= "+list);
         System.out.println("Size of List= "+list.size());
         obj.display(list);
-        System.out.println();
+        obj.show(list);
     }
 }
