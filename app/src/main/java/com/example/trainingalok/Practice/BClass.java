@@ -58,8 +58,6 @@ public class BClass implements CallBack{
 
             System.out.println("Enter Technology Number\nOptions are:-\n1 - Android\n2 - Flutter\n3 - React\n4 - Node\n5 - IOS");
             tech = Integer.parseInt(sc.readLine());
-
-            CClass ob2 = new CClass();
             switch (tech)
             {
                 case 1:System.out.println("Technology = Android");

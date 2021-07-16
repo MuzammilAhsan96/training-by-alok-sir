@@ -5,10 +5,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
 
 public class CClass implements CallBack{
     BufferedReader sc=new BufferedReader(new InputStreamReader(System.in));
+    @Override
     public void operation() throws IOException {
         int n1, n2;
         char opt;
