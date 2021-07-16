@@ -118,6 +118,10 @@ public class NameClass {
             return 0;
         }
         int a=n/10;
+        if(n%10==0)
+        {
+            a=a-1;
+        }
         return a+1;
     }
     public int addList(List<Integer> ls)    //This function return the sum of all the elements present in integer list
